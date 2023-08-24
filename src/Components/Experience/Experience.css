@@ -1,0 +1,67 @@
+.experience{
+    padding: 4rem 11rem;
+    padding-bottom: 2rem;
+}
+.experience>.flex{
+    margin-top: 2rem;
+    gap: 2.3rem;
+}
+.item{
+    /* border: 2px solid; */
+    border-top: 3px solid grey;
+    /* padding-top: 0.8rem; */
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8rem;
+}
+.item>h1{
+    font-size: 6rem;
+    margin: -1.1rem 0rem;
+    text-shadow: 2px 2px 15px rgb(102, 102, 102);
+    opacity: 0.4;
+}
+.item>p{
+    font-size: 1rem;
+}
+
+@media screen and (max-width:471px) {
+    .experience{
+        padding: 2rem 1.5rem;
+    }
+    .experience>.flex{
+        flex-direction: column;
+        
+    }
+    
+}
+@media screen and (min-width:471px) and (max-width:769px) {
+    .experience{
+        padding: 2rem 2rem;
+    }
+    .experience>.flex{
+        flex-wrap:wrap ;
+        padding: 0rem 3rem;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .experience{
+        padding: 2rem 2rem;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .experience{
+        padding: 2rem 3rem;
+    }
+}
+@media screen and (min-width:1440px) {
+    .experience{
+        padding: 2rem 5rem;
+    }
+}

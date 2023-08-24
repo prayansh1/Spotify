@@ -1,0 +1,149 @@
+.navbar{
+    display: flex;
+padding: 1rem 11rem;
+align-items: center;
+position: fixed;
+width: 100%;
+z-index: 100;
+}
+.logo{
+    flex: 0.8;
+    width: fit-content;
+}
+.logo img{
+    height: 5rem;
+    width: 7rem;
+}
+
+.menulist{
+    flex: 1;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 3rem;
+}
+.menulist>li{
+    transition: 3 all ease-in;
+}
+.menulist>li>a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+.menulist>li>a:hover{
+    color:sandybrown;
+}
+.menulist>li::before{
+    content: '';
+    height: 0.2rem;
+    width: 50%;
+    background-color: sandybrown;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    border-radius: 0.4rem;
+}
+.menulist>li{
+    position: relative;
+}
+li:hover li::before{
+    width: 100%;
+}
+.menu-icon{
+    visibility: hidden;
+    font-size: 1.3rem;
+}
+
+.scroll{
+    padding: 0.2rem 11rem;
+    background-color: #222;
+    font-size: 50%;
+    /* color: white; */
+}
+.scroll>ul>li>a{
+    font-size: 1.35rem;
+}
+.dropdown{
+    backdrop-filter: blur(5px);
+    flex-direction:column ;
+}
+
+@media screen and (max-width:800px){
+    .navbar{
+        /* position: relative; */
+        justify-self: center;
+    }
+    .navbar>i{
+        padding-top: 0;
+    }
+    .menulist{
+        flex-direction: column;
+        width: 60%;
+        bottom: -12rem;
+        gap: 0.4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem 0rem;
+        position: absolute;
+        background-color: rgba(180, 180, 180, 0.207);
+        backdrop-filter: blur(5px);
+        border-radius: 0.3rem;
+        filter: drop-shadow(0em 0em 8em rgb(0, 0, 0));
+        text-shadow: 2px 2px 5px black;
+    }
+    .visible{
+        visibility: hidden;
+    }
+    .menulist>li{
+        text-align: center;
+    }
+    .menulist>li>a{
+        font-size: 1.4rem;
+    }
+    .menu-icon{
+        visibility: visible;
+        font-size: 1.7rem;
+    }
+    .navbar{
+        padding: 0.1rem 5%;
+    }
+}
+@media screen and (min-width:320px) and (max-width:530px) {
+
+    .menulist{
+        width: 90%;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1024px){
+    .navbar{
+        padding: 1rem 3rem;
+    }
+    .menulist{
+        gap: 2rem;
+    }
+    /* .menulist>li>a{
+        font-size: 1.2rem;
+    } */
+    .scroll{
+        padding: 0.1rem 2rem;
+    }
+    .scroll>ul>li>a{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1200px){
+.navbar{
+    padding: 0.3rem 4rem;
+}
+.scroll{
+    padding: 0.1rem 4rem;
+}
+.scroll{
+    font-size: 0.4rem;
+}
+.scroll>ul>li>a{
+    font-size: 1.3rem;
+}
+}

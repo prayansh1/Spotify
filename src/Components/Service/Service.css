@@ -1,0 +1,116 @@
+.service{
+    padding: 3rem 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100vh; */
+    padding-bottom:0 ;
+    /* gap: 2rem; */
+    
+}
+.service>.flex{
+    /* justify-content: space-between; */
+    gap:3rem;
+    
+    align-items: center;
+    /* align-content: space-around; */
+    justify-content: center;
+}
+.service>:nth-child(3){
+    margin-top: 2rem;
+}
+.flex>.box{
+    padding: 1.5rem 2.5rem;
+    width: 33rem;
+    border-radius: 0.7rem;
+    /* width: fit-content; */
+}
+.flex>.box>h1{
+    margin-bottom: 1rem;
+}
+.last{
+    justify-content: end;
+    align-items: center;
+}
+
+@media screen and (max-width:471px){
+    .service{
+        padding: 2rem 1rem;
+    }
+    .service>.flex{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .service>.flex>.box{
+        padding: 1.2rem 2rem;
+        width: fit-content;
+        height: fit-content;
+    }
+    .service>h1{
+        padding: 1rem 0rem;
+    }
+    .last{
+        padding-top: 0.5rem;
+    }
+}
+@media screen and (min-width:471px) and (max-width:650px)
+{
+    .service{
+        padding: 2rem 1rem;
+    }
+    .service>.flex{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .service>.flex>.box{
+        padding: 1.2rem 2rem;
+        width: fit-content;
+        height: fit-content;
+    }
+    .service>h1{
+        padding: 1rem 0rem;
+    }
+    .last{
+        padding-top: 0.5rem;
+    }
+}
+@media screen and (min-width:651px) and (max-width:769px) {
+    .service{
+        padding: 2rem 2rem;
+    }
+    .service>.flex{
+        gap: 1.5rem;
+    }
+    .last{
+        padding-top: 0.5rem;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .service{
+        padding: 2rem 2rem;
+    }
+    .service>.flex{
+        /* flex-direction: column; */
+        gap: 2rem;
+    }
+    .service>:nth-child(3){
+        margin-top: 1rem;
+    }
+    .flex>.box{
+        padding: 1rem 2rem;
+    }
+    /* .last{
+        padding-top: 0.5rem;
+    } */
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .service{
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+.service{
+    padding: 2rem 5rem;
+}
+}

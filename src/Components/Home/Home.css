@@ -1,0 +1,78 @@
+.home{
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-left: 12rem;
+    color: white;
+    width: fit-content;
+}
+.content h1{
+    font-size: 4rem;
+}
+.content>p{
+    padding-top: 1rem ;
+    padding-bottom: 1.5rem;
+    width: 40%;
+}
+.content>button{
+    width: fit-content;
+}
+@media screen and (max-width:471px) {
+
+    .home{
+        height: 74vh;
+        padding: 0rem 0rem;
+        background-size: cover;
+        background-position: center;
+    }
+    .content{
+        padding-top: 8rem;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+    .content>h1{
+        font-size: 2.1rem;
+    }
+    .content>p{
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:471px) and (max-width:769px) {
+    .home{
+        height: 100vh;
+        padding: 0rem 0rem;
+    }
+    .content{
+        padding-top: 12rem ;
+        padding-left: 4rem;
+    }
+    .content>h1{
+        font-size: 3rem;
+    }
+    .content>p{
+        width: 80%;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .content{
+        padding-top: 8rem ;
+        padding-left: 4rem;
+    }
+    .content>p{
+        width: 60%;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .content>p{
+        width: 60%;
+        font-size: 1.1rem;
+    }
+}

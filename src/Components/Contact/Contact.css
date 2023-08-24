@@ -1,0 +1,124 @@
+.contact{
+    padding: 2rem 11rem;
+}
+.contact>p{
+    width: 36%;
+}
+
+.big{
+    gap: 3rem;
+    padding-top: 1.7rem;
+}
+.mini{
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.mini>i{
+    font-size: 3.4rem;
+    text-shadow: 2px 2px 15px rgb(102, 102, 102);
+    opacity: 0.4;
+    /* color: sandybrown; */
+}
+.inner{
+    padding: 1rem 0rem;
+}
+.mini>h1{
+    font-size: 2rem;
+}
+.inner>p{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.icon{
+    padding-top: 1.8rem;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: sandybrown;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:550px)
+{
+    .contact{
+        padding: 1rem 1.5rem;
+    }
+    .contact>p{
+        width: 100%;
+    }
+    .contact>.flex{
+        flex-direction: column;
+    }
+    .big{
+        gap: 2rem;
+    }
+    .big>.box{
+        padding: 1rem 1rem;
+        width: 100%;
+        height: fit-content;
+        gap: 1rem;
+    }
+    .mini{
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+    .on{
+        gap: 0.5rem;
+    }
+}
+@media screen and (min-width:550px) and (max-width:768px){
+    .contact{
+        padding: 1rem 2rem;
+    }
+    .contact>p{
+        width: 100%;
+    }
+    .contact>.flex{
+        flex-direction: column;
+    }
+    .big{
+        gap: 2rem;
+        align-items: center;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .contact{
+        padding: 2rem 2rem;
+
+    }
+    .contact>.flex{
+    gap: 1rem;    
+    }
+    .on{
+       flex-direction: column;
+    }
+    .contact h1{
+        font-size: 1.5rem;
+    }
+    .contact>h1{
+        font-size: 2rem;
+    }
+    .contact>p{
+        width: 50%;
+    }
+   
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .contact{
+        padding: 2rem 3rem;
+    }
+    .contact>.flex{
+        gap: 1.5rem;    
+        }
+
+}
+@media screen and (min-width:1440px) {
+.contact{
+    padding: 2rem 5rem;
+}
+}

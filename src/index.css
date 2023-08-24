@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+::-webkit-scrollbar{
+  width: 0; 
+}
+
+h1{
+  font-size: 2.2rem;
+}
+p{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.flex{
+  display: flex;
+}
+
+.blur:hover{
+  filter: drop-shadow(0 0 0.5em sandybrown);
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+  list-style: none;
+}
+
+.box{
+  box-shadow:-2px 2px 5px rgb(147, 146, 146);
+  /* width: fit-content;
+  height: fit-content; */
+}
+
+.color{
+  color: sandybrown;
+}
+
+.btn{
+  padding: 0.5rem 0.7rem;
+  color: whitesmoke;
+  background-color: sandybrown;
+  border: 0.2rem solid salmon ;
+  font-size: 1.2rem;
+  border-radius: 22px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.505);
+}
+.line{
+  position: relative;
+  width: fit-content;
+}
+.line::before{
+  content: '';
+  height: 0.2rem;
+  width: 100%;
+  background-color: sandybrown;
+  position: absolute;
+  left:0.6rem;
+  bottom: -0.2rem;
+  border-radius: 0.4rem;
+}
+.line::after{
+  content: '';
+  height: 0.2rem;
+  width: 100%;
+  background-color: sandybrown;
+  position: absolute;
+  left:1.3rem;
+  bottom: -0.6rem;
+  border-radius: 0.4rem;
+}
+.line1{
+  position: relative;
+}
+.line1::before{
+  content: '';
+  height: 0.2rem;
+  width: 100%;
+  background-color: sandybrown;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-radius: 0.4rem;
+}
+.btn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:426px) {
+h1{
+  font-size: 1.5rem;
+}
+}
